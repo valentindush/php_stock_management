@@ -9,18 +9,8 @@
         }
 
         public function insert($fields,$vals){
-            $cols = "";
-            $values = "";
-            
-            for($i = 0; $i < count($fields); $i++){
-
-                $cols +=" ".$i;
-            }
-
-            for($i = 0; $i < count($vals); $i++){
-
-                $values +=" ".$i;
-            }
+            $cols = join(",",$fields);
+            $values = join(",",$vals);            
 
             $sql = "INSERT INTO ".$this->table."($cols) values($cols)";
 
@@ -32,13 +22,41 @@
                 return false;
             }
         }
-        public function update($fields,$vals){
+        public function update($fields,$vals,$condition){
             $cols= "";
             $values = "";
+
+            $cols = join(",", $fields);
+            $values = join(",",$vals);
+
+            if(count($fields) == count($vals)){
+
+                $update_sql = "";
+                $update_arr = [];
+
+                for($i = 0; $i < count($fields);$i++){
+                    array_push($update_arr,"$fields[$i] = $vals[$i]");
+
+                }
+
+                $update_sql = join(",",$update_arr);
+                $sql = "ALTER TABLE ".$this->table."SET $update_sql WHERE $condition";
+                
+            }
+            
             
             
         }
+
+        public function delete($id,$condition){
+            $sql = "DELETE FROM ".$this->table." WHERE ".$condition;
+        }
+
+        public function search($col,$val){
+            $sql = "SELECT * FROM ".$this->table." WHERE ".$col." like %".$val."%";
+        }
+
     }
 
-    // $sql = "INSERT INTO users (name, email, password) VALUES ('John', 'codesval', '123456')";
+    
 ?>
