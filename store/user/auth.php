@@ -22,9 +22,27 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your email for registration</span>
+			<input type="text" placeholder="First name" />
+			<input type="text" placeholder="Last name" />
+			<div class="radio">
+				<p>Gender</p>
+				<label>
+					Male
+					<input type="radio" value="male"/>
+				</label>
+				<label>
+					Female
+					<input type="radio" value="female"/>
+				</label>
+			</div>
+			<input type="text" placeholder="Telephone" />
+			<input type="text" placeholder="Nationality" />
 			<input type="text" placeholder="Username" />
-			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
+
+			<div class="err">
+				<p style="color: red"></p>
+			</div>
 			<button>Sign Up</button>
 		</form>
 	</div>

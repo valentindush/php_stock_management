@@ -1,6 +1,6 @@
 <?php
     include 'config.php';
-    class Crud {
+    class Table {
 
         public $table;
         private $conn;
@@ -67,6 +67,17 @@
 
         public function search($col,$val){
             $sql = "SELECT * FROM ".$this->table." WHERE ".$col." like %".$val."%";
+            $query = mysqli_query($this->conn,$sql);
+            if($query){
+                $data = [];
+                while($row = mysqli_fetch_assoc($query)){
+                    array_push($data,$row);
+                }
+                return $data;
+
+            }else{ 
+                return false;
+            }
         }
 
         public function getAll($col){
@@ -88,7 +99,11 @@
             $sql = "SELECT * FROM ".$this->table." WHERE ".$col." = ".$val;
             $query = mysqli_query($this->conn,$sql);
             if($query){
-                return $query;
+                $data = [];
+                while($row = mysqli_fetch_assoc($query)){
+                    array_push($data,$row);
+                }
+                return $data;
             }else{
                 return false;
             }
