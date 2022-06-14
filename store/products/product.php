@@ -21,8 +21,8 @@
                 </div>
 
                 <div class="links flex flex-col gap-1 mt-24">
-                    <a class="p-2 w-full flex gap-2 items-center text-sm bg-red-400 text-white" href=""><i class="fa-solid fa-chart-line"></i>Darshboard</a>
-                    <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href=""><i class="fa-solid fa-box"></i>Products</a>
+                    <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href=""><i class="fa-solid fa-chart-line"></i>Darshboard</a>
+                    <a class="p-2 w-full flex gap-2 items-center text-sm bg-red-400 text-white" href=""><i class="fa-solid fa-box"></i>Products</a>
                     <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href=""><i class="fa-solid fa-store"></i>Inventory</a>
                     <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Outgoing</a>
                     <div class="last absolute bottom-12 px-3">
