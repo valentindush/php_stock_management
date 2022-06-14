@@ -14,7 +14,7 @@
 <h2>Login or Create account</h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="signup.php" method="POST">
 			<h1>Create Account</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -22,32 +22,32 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your email for registration</span>
-			<input type="text" placeholder="First name" />
-			<input type="text" placeholder="Last name" />
+			<input name="fname" type="text" placeholder="First name" />
+			<input name="lname" type="text" placeholder="Last name" />
 			<div class="radio">
 				<p>Gender</p>
 				<label>
 					Male
-					<input type="radio" value="male"/>
+					<input name="gender" type="radio" value="male"/>
 				</label>
 				<label>
 					Female
-					<input type="radio" value="female"/>
+					<input name="gender" type="radio" value="female"/>
 				</label>
 			</div>
-			<input type="text" placeholder="Telephone" />
-			<input type="text" placeholder="Nationality" />
-			<input type="text" placeholder="Username" />
-			<input type="password" placeholder="Password" />
+			<input name="phone" type="text" placeholder="Telephone" />
+			<input name="nation" type="text" placeholder="Nationality" />
+			<input name="username" type="text" placeholder="Username" />
+			<input name="password" type="password" placeholder="Password" />
 
 			<div class="err">
 				<p style="color: red"></p>
 			</div>
-			<button>Sign Up</button>
+			<button type="submit">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="login.php" method="POST">
 			<h1>Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -55,10 +55,10 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<input name="email"  type="email" placeholder="Email" />
+			<input name="password" type="password" placeholder="Password" />
 			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
+			<button type="submit">Sign In</button>
 		</form>
 	</div>
 	<div class="overlay-container">

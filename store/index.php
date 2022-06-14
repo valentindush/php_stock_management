@@ -17,10 +17,10 @@
             </div>
 
             <div class="links flex flex-col gap-1 mt-24">
-                <a class="p-2 w-full flex gap-2 items-center text-sm bg-red-400 text-white" href=""><i class="fa-solid fa-chart-line"></i>Darshboard</a>
-                <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href=""><i class="fa-solid fa-box"></i>Products</a>
-                <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href=""><i class="fa-solid fa-store"></i>Inventory</a>
-                <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Outgoing</a>
+                <a class="p-2 w-full flex gap-2 items-center text-sm bg-red-400 text-white" href="#"><i class="fa-solid fa-chart-line"></i>Darshboard</a>
+                <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href="products/product.php"><i class="fa-solid fa-box"></i>Products</a>
+                <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href="inventory/index.php"><i class="fa-solid fa-store"></i>Inventory</a>
+                <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href="out/index.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Outgoing</a>
                 <div class="last absolute bottom-12 px-3">
                     <a class="p-2 border-2 border-red-400 px-4 hover:scale-95 text-sm block rounded-full" href="">Logout</a>
                 </div>

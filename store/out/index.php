@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Outgoing</title>
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
@@ -22,9 +22,9 @@
 
                 <div class="links flex flex-col gap-1 mt-24">
                     <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href="../index.php"><i class="fa-solid fa-chart-line"></i>Darshboard</a>
-                    <a class="p-2 w-full flex gap-2 items-center text-sm bg-red-400 text-white" href="#"><i class="fa-solid fa-box"></i>Products</a>
+                    <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href="../products/product.php"><i class="fa-solid fa-box"></i>Products</a>
                     <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href="../inventory/index.php"><i class="fa-solid fa-store"></i>Inventory</a>
-                    <a class="p-2 w-full flex gap-2 items-center text-sm hover:bg-red-400 hover:text-white" href="../out/index.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Outgoing</a>
+                    <a class="p-2 w-full flex gap-2 items-center text-sm bg-red-400 text-white" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Outgoing</a>
                     <div class="last absolute bottom-12 px-3">
                         <a class="p-2 border-2 border-red-400 px-4 hover:scale-95 text-sm block rounded-full" href="">Logout</a>
                     </div>
@@ -38,8 +38,8 @@
                 <table class="w-[90%]  mt-10 rounded-xl table-auto border-collapse border-spacing-6">
                     <div class="search bg-white w-[90%] flex items-center p-2 rounded-full relative justify-between">
                         <i class="fa-solid fa-magnifying-glass absolute left-8 text-gray-500"></i>
-                        <input type="text" placeholder="Search products" class="p-2 bg-slate-100 rounded-full pl-12 outline-none border-none focus:border-red-400">
-                        <button class="border-2 border-red-400 p-2 px-4 text-sm rounded-full">New product</button>
+                        <input type="text" placeholder="Search Outgoing" class="p-2 bg-slate-100 rounded-full pl-12 outline-none border-none focus:border-red-400">
+                        <button class="border-2 border-red-400 p-2 px-4 text-sm rounded-full">Add new</button>
                     </div>
                     <thead>
                     
