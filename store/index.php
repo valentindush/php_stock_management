@@ -26,8 +26,8 @@
                 </div>
             </div>
         </nav>
-        <div class="content h-screen">
-            
+        <div class="content h-screen w-full bg-gray-200 p-4">
+            <p class="text-red-400">Darshboard</p>
         </div>
     </div>
 </body>
